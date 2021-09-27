@@ -343,7 +343,7 @@ export class DataMapper {
       // first goes update
       
       // yield this._putInEnvelope(l2UpdateMessage, true)
-      yield this._putInEnvelope(l2Snapshot, false)
+      yield this._putInEnvelope(l2Snapshot, true)
 
       // then snapshot, as new snapshot already includes update
       yield this._putInEnvelope(l2Snapshot, false)
